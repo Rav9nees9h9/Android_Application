@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompanyActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="254dp"
+        android:layout_height="45dp"
+        android:text="About Use"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="111dp"
+        android:layout_height="106dp"
+        app:srcCompat="@drawable/sold"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="62dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="484dp"
+        android:onClick="onCreateClick"
+        android:text="CREATE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ListView
+        android:id="@+id/company_details"
+        android:layout_width="412dp"
+        android:layout_height="357dp"
+        android:layout_marginBottom="126dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/reload_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RELOAD"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="651dp" />
+
+    <Button
+        android:id="@+id/clear_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="651dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

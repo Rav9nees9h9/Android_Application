@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Company</string>
+    <string name="app_title">Sold Cars</string>
+    <string name="app_cars">Number of Cars</string>
+    <string name="app_profit">Profits</string>
+    <string name="image_alt">logo</string>
+    <string name="image_car">audi</string>
+    <string name="image_car2">Audi2</string>
+    <string name="image_car3">Honda2</string>
+    <string name="image_car4">Honda3</string>
+    <string name="image_car5">BMW1</string>
+    <string name="image_car6">BMW2</string>
+    <string name="main_menu">Home</string>
+    <string name="main_menu1">View Vehicle</string>
+    <string name="main_menu2">Active Vehicle</string>
+    <string name="main_menu3">Sold Vehicle</string>
+    <string name="main_menu4">Details</string>
+    <string name="main_menu5">Company Details</string>
+    <string name="main_menu6">Modify Details</string>
+    <string name="main_menu7">Add Vehicle</string>
+    <string name="main_menu8">Modify Vehicle</string>
+    <string name="title_activity_base_veh">BaseActivityVeh</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

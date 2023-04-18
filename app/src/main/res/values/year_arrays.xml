@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="year">
+        <item>2009</item>
+        <item>2010</item>
+        <item>2012</item>
+        <item>2015</item>
+        <item>2018</item>
+        <item>2020</item>
+        <item>2021</item>
+    </string-array>
+</resources>
