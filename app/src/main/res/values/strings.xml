@@ -4,13 +4,6 @@
     <string name="app_cars">Number of Cars</string>
     <string name="app_profit">Profits</string>
     <string name="image_alt">logo</string>
-    <string name="image_car">audi</string>
-    <string name="image_car2">Audi2</string>
-    <string name="image_car3">Honda2</string>
-    <string name="image_car4">Honda3</string>
-    <string name="image_car5">BMW1</string>
-    <string name="image_car6">BMW2</string>
-    <string name="main_menu">Home</string>
     <string name="main_menu1">View Vehicle</string>
     <string name="main_menu2">Active Vehicle</string>
     <string name="main_menu3">Sold Vehicle</string>
