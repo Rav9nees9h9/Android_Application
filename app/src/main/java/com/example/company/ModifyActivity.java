@@ -22,7 +22,7 @@ import java.io.InputStream;
 
 public class ModifyActivity extends BaseActivityVeh {
     VehicleModel vehicle = new VehicleModel();
-    private boolean isVehicleSold;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

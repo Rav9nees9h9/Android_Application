@@ -13,8 +13,13 @@ public class VehicleModel {
     private String fullImage;
     private int soldDate;
 
+    private boolean isSold;
+
     public VehicleModel(){}
-    public VehicleModel(String make, String model,String condition,String engineCylinder, String year,String numberOfDoors, String price, String color, String thumbnailImage, String fullImage, int soldDate) {
+
+
+
+    public VehicleModel(String make, String model, String condition, String engineCylinder, String year, String numberOfDoors, String price, String color, String thumbnailImage, String fullImage, int soldDate, boolean isSold) {
         this.make = make;
         this.model = model;
         this.condition = condition;
@@ -26,6 +31,7 @@ public class VehicleModel {
         this.soldDate = soldDate;
         this.thumbnailImage = thumbnailImage;
         this.fullImage = fullImage;
+        this.isSold = isSold;
     }
 
     public String getMake() {
@@ -114,6 +120,13 @@ public class VehicleModel {
 
     public void setSoldDate(int soldDate) {
         this.soldDate = soldDate;
+    }
+    public boolean isSold() {
+        return isSold;
+    }
+
+    public void setSold(boolean sold) {
+        isSold = sold;
     }
 
 }

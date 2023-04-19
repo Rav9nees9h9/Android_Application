@@ -3,9 +3,13 @@ package com.example.company;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.Toast;
 import android.os.Bundle;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ViewActivity extends BaseActivityVeh {
 
@@ -17,6 +21,22 @@ public class ViewActivity extends BaseActivityVeh {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_view);
+
+        vehicle.add(new VehicleModel("Audi","A4","Great","V4","2015","4","120500","Black","R.drawable.audi1","R.drawable.audi1",7,true));
+        vehicle.add(new VehicleModel("BMW","M8","Great","V6","2018","4","121500","Red","R.drawable.bmw1","R.drawable.bmw1",4,true));
+        vehicle.add(new VehicleModel("Audi","R8","Great","V8","2012","2","120500","Black","R.drawable.audi2","R.drawable.audi2",5,false));
+        vehicle.add(new VehicleModel("Honda","Civic","Great","V4","2018","4","121500","Red","R.drawable.honda1","R.drawable.honda1",4,true));
+        vehicle.add(new VehicleModel("Honda","Accord","Great","V5","2016","4","120500","Silver","R.drawable.honda2","R.drawable.honda2",10,false));
+        vehicle.add(new VehicleModel("BMW","M4","Great","V10","2020","4","121500","Black","R.drawable.bmw2","R.drawable.bmw2",4,false));
+        vehicle.add(new VehicleModel("Audi","R8","Great","V8","2012","2","120500","Black","R.drawable.audi2","R.drawable.audi2",5,false));
+        vehicle.add(new VehicleModel("Honda","Civic","Great","V4","2018","4","121500","Red","R.drawable.honda1","R.drawable.honda1",4,true));
+        vehicle.add(new VehicleModel("Honda","Accord","Great","V5","2016","4","120500","Silver","R.drawable.honda2","R.drawable.honda2",10,false));
+        vehicle.add(new VehicleModel("BMW","M4","Great","V10","2020","4","121500","Black","R.drawable.bmw2","R.drawable.bmw2",4,false));
+
+
+        vehicleList = findViewById(R.id.vehicle_details);
+
+
 
         AlertDialog.Builder confirmClearContentsDialog = new AlertDialog.Builder(this);
         confirmClearContentsDialog.setTitle("Are you sure?");
@@ -80,6 +100,38 @@ public class ViewActivity extends BaseActivityVeh {
 
         startActivity(new Intent(getApplicationContext(), ModifyActivity.class));
     }
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+    {
+        VehicleModel vehicles = vehicle.get(position);
+        String status = vehicles.isSold() ? "Sold" : "Available";
+        Toast.makeText(com.example.company.ViewActivity.this,"Error occured",Toast.LENGTH_SHORT).show();
+
+    }
+    public void showAvailableVehicles(View view)
+    {
+        List<VehicleModel> availableVehicles = new ArrayList<>();
+        for(VehicleModel vehicles : vehicle)
+        {
+            if(!vehicles.isSold())
+            {
+                availableVehicles.add(vehicles);
+            }
+        }
+        startActivity(new Intent(getApplicationContext(), AvailableActivity));
+    }
+    public void showSoldVehicle(View view)
+    {
+        List<VehicleModel> soldVehicles = new ArrayList<>();
+        for(VehicleModel vehicles : vehicle)
+        {
+            if(vehicles.isSold())
+            {
+                soldVehicles.add(vehicles);
+            }
+        }
+        startActivity(new Intent(getApplicationContext(), SoldActivity));
+    }
+
 }
 
 

@@ -19,8 +19,6 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
 
         Button view = findViewById(R.id.button_view);
-        Button vehicle = findViewById(R.id.button_veh);
-        Button sold = findViewById(R.id.button_sold);
         Button details = findViewById(R.id.button_det);
         Button compDetails = findViewById(R.id.button_comp);
         Button modify = findViewById(R.id.button_modify);
@@ -36,14 +34,6 @@ public class MainActivity extends BaseActivity {
                 switch (selectedItemID) {
                     case R.id.button_view:
                         intent = new Intent(getApplicationContext(), ViewActivity.class);
-                        startActivity(intent);
-                        break;
-                    case R.id.button_veh:
-                        intent = new Intent(getApplicationContext(), AvailableActivity.class);
-                        startActivity(intent);
-                        break;
-                    case R.id.button_sold:
-                        intent = new Intent(getApplicationContext(), SoldActivity.class);
                         startActivity(intent);
                         break;
                     case R.id.button_det:
@@ -72,8 +62,6 @@ public class MainActivity extends BaseActivity {
             }
         };
         view.setOnClickListener(onClickListener);
-        vehicle.setOnClickListener(onClickListener);
-        sold.setOnClickListener(onClickListener);
         details.setOnClickListener(onClickListener);
         compDetails.setOnClickListener(onClickListener);
         modify.setOnClickListener(onClickListener);

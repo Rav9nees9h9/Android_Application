@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -29,15 +30,15 @@ public class DetailActivity extends ArrayAdapter<VehicleModel>
 
         }
         ImageView vehPhoto = view.findViewById(R.id.veh_info);
-        EditText make = view.findViewById(R.id.make_info);
-        EditText model = view.findViewById(R.id.model_info);
-        EditText condition = view.findViewById(R.id.condition_info);
-        EditText engineCylinder = view.findViewById(R.id.engine_info);
-        EditText year = view.findViewById(R.id.year_info);
-        EditText numberOfDoors = view.findViewById(R.id.doors_info);
-        EditText price = view.findViewById(R.id.price_info);
-        EditText color = view.findViewById(R.id.color_info);
-        EditText aoldDate = view.findViewById(R.id.date_info);
+        TextView make = view.findViewById(R.id.make_info);
+        TextView model = view.findViewById(R.id.model_info);
+        TextView condition = view.findViewById(R.id.condition_info);
+        TextView engineCylinder = view.findViewById(R.id.engine_info);
+        TextView year = view.findViewById(R.id.year_info);
+        TextView numberOfDoors = view.findViewById(R.id.doors_info);
+        TextView price = view.findViewById(R.id.price_info);
+        TextView color = view.findViewById(R.id.color_info);
+        TextView soldDate = view.findViewById(R.id.date_info);
 
         make.setText(vehicle.getMake());
         model.setText(vehicle.getModel());
@@ -47,7 +48,7 @@ public class DetailActivity extends ArrayAdapter<VehicleModel>
         numberOfDoors.setText(vehicle.getNumberOfDoors());
         price.setText(vehicle.getPrice());
         color.setText(vehicle.getColor());
-        aoldDate.setText(vehicle.getSoldDate());
+        soldDate.setText(vehicle.getSoldDate());
 
 
         File file = new File(vehicle.getFullImage());
