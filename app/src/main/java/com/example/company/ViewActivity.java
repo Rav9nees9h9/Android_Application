@@ -117,7 +117,7 @@ public class ViewActivity extends BaseActivityVeh {
                 availableVehicles.add(vehicles);
             }
         }
-        startActivity(new Intent(getApplicationContext(), AvailableActivity));
+        startActivity(new Intent(getApplicationContext(), AvailableActivity.class));
     }
     public void showSoldVehicle(View view)
     {
@@ -129,7 +129,7 @@ public class ViewActivity extends BaseActivityVeh {
                 soldVehicles.add(vehicles);
             }
         }
-        startActivity(new Intent(getApplicationContext(), SoldActivity));
+        startActivity(new Intent(getApplicationContext(), SoldActivity.class));
     }
 
 }
