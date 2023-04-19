@@ -47,43 +47,8 @@ public class BaseActivityVeh extends AppCompatActivity {
                     .limit(limit)
                     .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
                     .toString();
-            /*
-            try{
-
-                readFileContents();
-                popUpMessage("Successfully Run");
-            }
-            catch(Exception e)
-            {
-                popUpMessage("Could not read file");
-            }
-
-            try{
-
-                writeFileContents(dbVeh_file);
-                popUpMessage("Successfully write");
-            }
-            catch(Exception e)
-            {
-                popUpMessage("Could not write to file");
-            }
-            try{
-
-                clearContents();
-                popUpMessage("Successfully cleared");
-            }
-            catch(Exception e)
-            {
-                popUpMessage("Could not clear the file");
-            }*/
-
         }
-/*
-        public void popUpMessage(String message)
-        {
-            Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
-        }
-*/
+
         protected void readFileContents() throws Exception {
 
             FileInputStream fileInputStream = openFileInput(dbVeh_file);

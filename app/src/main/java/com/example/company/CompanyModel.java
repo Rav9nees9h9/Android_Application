@@ -6,7 +6,8 @@ public class CompanyModel {
 
     private String image;
 
-    public CompanyModel(){}
+      public CompanyModel(){}
+
     public CompanyModel(String companyName, String address, String image) {
         this.companyName = companyName;
         this.address = address;
@@ -36,6 +37,8 @@ public class CompanyModel {
     public void setImage(String image) {
         this.image = image;
     }
+
+
     @Override
     public String toString() {
         return "Company{" +

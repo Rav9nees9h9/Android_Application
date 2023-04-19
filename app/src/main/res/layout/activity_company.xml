@@ -10,7 +10,7 @@
         android:id="@+id/textView4"
         android:layout_width="254dp"
         android:layout_height="45dp"
-        android:text="About Use"
+        android:text="About Us"
         android:textAlignment="center"
         android:textColor="@color/purple_500"
         android:textSize="20sp"

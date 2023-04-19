@@ -35,41 +35,19 @@
         android:id="@+id/button_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="276dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="280dp"
         android:text="View Vehicle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text" />
-
-    <Button
-        android:id="@+id/button_sold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="276dp"
-        android:layout_marginBottom="24dp"
-        android:text="Sold Vehicle"
-        app:layout_constraintBottom_toTopOf="@+id/button_add"
-        app:layout_constraintStart_toEndOf="@+id/button_view"
         app:layout_constraintTop_toBottomOf="@+id/text" />
 
     <Button
         android:id="@+id/button_det"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
         android:text="Details"
-        app:layout_constraintStart_toEndOf="@+id/button_comp"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <Button
-        android:id="@+id/button_veh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="256dp"
-        android:text="AVAILABLE VEH"
         app:layout_constraintStart_toEndOf="@+id/button_comp"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -88,8 +66,8 @@
         android:id="@+id/button_modify"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="4dp"
         android:text="Modify Details"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_comp" />
@@ -99,17 +77,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="24dp"
         android:text="Add Vehicle"
         app:layout_constraintStart_toEndOf="@+id/button_det"
-        app:layout_constraintTop_toBottomOf="@+id/button_sold" />
+        tools:layout_editor_absoluteY="359dp" />
 
     <Button
         android:id="@+id/button_mod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
         android:text="Modify Vehicle"
         app:layout_constraintStart_toEndOf="@+id/button_modify"
         app:layout_constraintTop_toBottomOf="@+id/button_add" />
