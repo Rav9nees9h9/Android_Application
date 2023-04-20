@@ -104,20 +104,20 @@
         tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="665dp" />
 
-    <ImageView
-        android:id="@+id/image_id"
-        android:layout_width="123dp"
-        android:layout_height="512dp"
-        app:srcCompat="@drawable/sold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="310dp" />
+    <Button
+        android:id="@+id/add_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="549dp" />
 
-    <ImageView
-        android:id="@+id/thumbnail_id"
-        android:layout_width="123dp"
-        android:layout_height="512dp"
-        app:srcCompat="@drawable/sold"
-        tools:layout_editor_absoluteX="246dp"
-        tools:layout_editor_absoluteY="310dp" />
+    <Button
+        android:id="@+id/add_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thumbnail"
+        tools:layout_editor_absoluteX="275dp"
+        tools:layout_editor_absoluteY="549dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

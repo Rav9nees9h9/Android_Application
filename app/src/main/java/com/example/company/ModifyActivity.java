@@ -60,8 +60,16 @@ public class ModifyActivity extends BaseActivityVeh {
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
             return;
         }
-            
-    }
+
+            try{
+                writeFileContents(vehicle.writeToFile());
+                startActivity(new Intent(this, ViewActivity.class));
+            }
+            catch (Exception e){
+                Toast.makeText(this, "Could not write to file", Toast.LENGTH_SHORT).show();
+            }
+
+        }
 
 
     public void askForPermissions() {

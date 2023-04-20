@@ -36,6 +36,7 @@ public class AvailableActivity extends BaseActivityVeh {
         TextView soldDate = findViewById(R.id.date_info);
 
 
+
         try{
             readFileContents();
         }
@@ -55,6 +56,15 @@ public class AvailableActivity extends BaseActivityVeh {
         color.setText(availableVehicles.toString());
 
         soldDate.setText(availableVehicles.toString());
+
+        File file = new File(availableVehicles.get(vehPhoto));
+        if(file.exists())
+        {
+            vehPhoto.setImageBitmap(BitmapFactory.decodeFile(file.getAbsolutePath()));
+        }
+        else {
+            vehPhoto.setImageResource(R.drawable.sold);
+        }
 
     }
 }

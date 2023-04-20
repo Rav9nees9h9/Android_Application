@@ -56,5 +56,13 @@ public class SoldActivity extends BaseActivityVeh {
 
         soldDate.setText(soldVehicles.toString());
 
+        File file = new File(soldVehicles.get(vehPhoto));
+        if(file.exists())
+        {
+            vehPhoto.setImageBitmap(BitmapFactory.decodeFile(file.getAbsolutePath()));
+        }
+        else {
+            vehPhoto.setImageResource(R.drawable.sold);
+        }
     }
 }

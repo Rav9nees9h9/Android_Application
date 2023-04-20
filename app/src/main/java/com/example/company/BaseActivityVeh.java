@@ -111,7 +111,7 @@ public class BaseActivityVeh extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.menu:
                     //create an Intent
-                    Intent intent = new Intent(this, MainActivity.class);
+                    Intent intent = new Intent(this, ViewActivity.class);
                     //start new activity
                     startActivity(intent);
                     break;

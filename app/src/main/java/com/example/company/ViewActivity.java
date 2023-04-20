@@ -88,6 +88,14 @@ public class ViewActivity extends BaseActivityVeh {
             }
 
         });
+        if(vehicle.size() == 0)
+        {
+            Toast.makeText(com.example.company.ViewActivity.this, "No vehicle entries found", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Toast.makeText(com.example.company.ViewActivity.this, "Welcome to vehicle", Toast.LENGTH_SHORT).show();
+
+        }
 
 
         vehicleList = findViewById(R.id.vehicle_details);
